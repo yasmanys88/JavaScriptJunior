@@ -18,8 +18,19 @@ class Perro extends Animal {
     ladrar() {
         alert(`Esta Ladrando el ${this.raza}`);
     }
+
+    set setRaza(newRaza) {
+        this.raza = newRaza;
+    }
+    get getRaza() {
+        return this.raza;
+    }
 };
 
+
 const perro = new Perro("Perro", 5, "negro", "Chiguagua");
-perro.verinfo();
+//perro.verinfo();
+perro.ladrar();
+//para modificar la raza se accede como propiedad
+perro.setRaza = "Doberman";
 perro.ladrar();
