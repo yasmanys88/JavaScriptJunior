@@ -72,5 +72,8 @@ class CelularAltaGama extends Celular {
 const celular1 = new Celular("Rojo", "150g", "10'", "250px", "2Gb");
 const celular2 = new CelularAltaGama("Azul", "100g", "20'", "600px", "4Gb", "Full HD");
 
-document.write(celular2.mobileInfoAltaGama());
+document.write(
+    `${celular2.mobileInfoAltaGama()}<br><br>
+    ${celular1.mobileInfo()}  
+    `);
 
