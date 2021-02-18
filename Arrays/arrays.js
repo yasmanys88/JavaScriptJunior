@@ -53,6 +53,21 @@ cosas.sort(); // ['1 Word', '2 Words', 'Word', 'word']
 const months = ['Jan', 'March', 'April', 'June'];
 months.splice(1, 0, 'Feb'); // inserts at index 1
 document.write(months + "<br>"); // expected output: Array ["Jan", "Feb", "March", "April", "June"]
-
 months.splice(4, 1, 'May'); // replaces 1 element at index 4
-document.write(months + "<br>"); // expected output: Array ["Jan", "Feb", "March", "April", "May"]
+document.write(months + "<br><br>"); // expected output: Array ["Jan", "Feb", "March", "April", "May"]
+
+
+//filter() crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter(word => word.length > 6);
+document.write(result + "<br><br>");// expected output: Array ["exuberant", "destruction", "present"]
+
+
+//forEach() ejecuta la función indicada una vez por cada elemento del array.
+const array3 = ['a', 'b', 'c'];
+
+array3.forEach(element => document.write(element + "<br>"));
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
