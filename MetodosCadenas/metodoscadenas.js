@@ -29,3 +29,9 @@ document.write("<br> split: " + resultado6);
 //cadena.substring(indiceA[, indiceB'])método devuelve un subconjunto de un objeto String.
 resultado7 = cadenasplit.substring(0, 4);
 document.write("<br> substring: " + resultado7);
+
+//trim( ) elimina los espacios en blanco en ambos extremos del string.
+let cadenaespacio = "   pedro   ";
+document.write("<br> Antes del trim() el tamaño es: " + cadenaespacio.length);
+resultado8 = cadenaespacio.trim();
+document.write("<br> Despues del trim() el tamaño es: " + resultado8.length);
